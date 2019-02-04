@@ -1,2 +1,2 @@
 #!/bin/sh
-docker run -it -p 8080:8080 dev /bin/zsh
+docker run -it -p 4567:4567 dev /bin/zsh

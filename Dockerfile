@@ -1,5 +1,6 @@
 FROM debian:latest
 FROM node:10
+FROM microsoft/dotnet:2.2-sdk
 
 
 WORKDIR /root
@@ -29,7 +30,7 @@ RUN git config --global credential.helper 'store --file ~/.git-credentials'
 
 WORKDIR /root
 
-EXPOSE 8080
+EXPOSE 4567
 
 # start image with docker run -it -p 8080:8080 dev /bin/zsh
 
